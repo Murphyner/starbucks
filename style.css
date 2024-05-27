@@ -1,0 +1,28 @@
+.land-hero {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .1), 0 2px 2px rgba(0, 0, 0, .06), 0 0 2px rgba(0, 0, 0, .07);
+}
+.land-ftr{
+    box-shadow: 0 -1px 3px rgba(0, 0, 0, .1), 0 -2px 2px rgba(0, 0, 0, .06), 0 0 2px rgba(0, 0, 0, .07);
+}
+#rew-main{
+    background-image: url('/img/xl-hero-desktop_2021.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.active-btn{
+    border-bottom: 5px solid #00754A !important;
+}
+.active-div{
+    opacity: 1 !important;
+    height: auto !important;
+    transition: .4s !important;
+}
+#rew-main-img{
+    background: url('/img/844262945b2a8b8cfb29.webp')center/cover no-repeat;
+}
+#rew-left{
+    background: url('/img/7997fb008f368630d3ca.svg')center/cover no-repeat;
+}
+#rew-right{
+    background: url('/img/b7e1b20df72e802cb1cf.svg')center/cover no-repeat;
+}
