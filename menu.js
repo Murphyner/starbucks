@@ -39,8 +39,8 @@ function Show() {
             catContains[i] ?  catContains[i].innerHTML += `
                                     <div class="lg:size-6/12 size-full px-3 mb-8">
                                         <a target="_blank" href="products.html?name=${item.name}" class="flex cursor-pointer items-center">
-                                            <div class="mr-3 rounded-full overflow-hidden">
-                                                <img class="w-[120px]" src="${item.img}" />
+                                            <div class="mr-3 w-[120px] rounded-full overflow-hidden">
+                                                <img class="w-full" src="${item.img}" />
                                             </div>
                                             <div>
                                                 <p class="text-[24px] font-medium">${item.name}</p>
