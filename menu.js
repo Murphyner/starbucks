@@ -1,6 +1,6 @@
 let DATA
 function GetData() {
-    fetch('https://raw.githubusercontent.com/zahid022/json/main/starbucks')
+    fetch('https://raw.githubusercontent.com/zahid022/json/main/starbucks.json')
         .then(res => res.json())
         .then(data => DATA = data)
         .then(() => Show())
