@@ -31,21 +31,23 @@ function Show() {
         kod.map(item => {
             if (item.children.length) {
                 item.img = item.children[0].products[0].assets.masterImage.uri
-            }else if (item.products) {
+            } else if (item.products) {
                 item.img = item.products[0].assets.masterImage.uri
             }
-            
+
             catlist[i].innerHTML += `<li class="text-[20px] font-normal mb-2 text-[#6B6B6B]"><a target="_blank" href="products.html?name=${item.name}">${item.name}</a></li>`
-            catContains[i] ?  catContains[i].innerHTML += `
-                                    <div class="lg:size-6/12 size-full px-3 mb-8">
+            catContains[i] ? catContains[i].innerHTML += `
+                                    <div class="lg:size-6/12 size-full px-3 mb-8"> 
                                         <a target="_blank" href="products.html?name=${item.name}" class="flex cursor-pointer items-center">
-                                            <div class="mr-3 w-[120px] rounded-full overflow-hidden flex-shrink-0">
+                                            <div class="mr-3 w-[70px] sm:w-[120px]  rounded-full overflow-hidden flex-shrink-0">
                                                 <img class="w-full" src="${item.img}" />
                                             </div>
-                                            <div>
+                                            <div class="">
                                                 <p class="text-[24px] font-medium">${item.name}</p>
                                             </div>
                                         </a>
                                     </div>
                                      `  : ''
-})})}
+        })
+    })
+}
